@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>House Prediction</title>
+    <link rel = 'stylesheet' href = 'app.css'>
+</head>
+
+<body>
+    <div class="img"></div>
+    <form class="form">
+        <div class="area"><h3>Area(Square Feet)</h3></div>
+        <input type="text" id='area' placeholder="Enter Square Feet">
+        <h3>BHK</h3>
+        <div class='bhk-field'>
+            <input type="radio" id='bhk1' class='bhk' value="1" name='bhk'>
+            <label for="bhk1">1</label>
+            <input type="radio" id='bhk2' class='bhk' value="2" name='bhk' checked>
+            <label for="bhk2">2</label>
+            <input type="radio" id='bhk3' class='bhk' value="3" name='bhk'>
+            <label for="bhk3">3</label>
+            <input type="radio" id='bhk4' class='bhk' value="4" name='bhk'>
+            <label for="bhk4">4</label>
+        </div>
+        <h3>Bath</h3>
+        <div class='bath-field'>
+            <input type="radio" id='bath1' class='bath' value="1" name='bath'>
+            <label for="bath1">1</label>
+            <input type="radio" id='bath2' class='bath' value="2" name='bath' checked>
+            <label for="bath2">2</label>
+            <input type="radio" id='bath3' class='bath' value="3" name='bath'>
+            <label for="bath3">3</label>
+            <input type="radio" id='bath4' class='bath' value="4" name='bath'>
+            <label for="bath4">4</label>
+        </div>
+        <h3>Location</h3>
+        <select class="location" >
+        </select>
+        <button type = 'submit' class = 'submit'>Estimate Price</button>
+        <div class="estimated-price">
+            <h2></h2>
+        </div>
+    </form>
+    <script src = 'app.js'></script>
+</body>
+
+</html>
